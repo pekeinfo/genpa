@@ -11,8 +11,8 @@ from PIL import Image
 def main():
         animalicos = open("animalicos.txt","r")
         ad = open("ad.txt",'r')
-        name =  random.choice(animalicos.readlines()).replace('\n','')
-	app =  random.choice(ad.readlines()).replace('\n','')
+        name =  random.choice(animalicos.readlines()).strip('\n')
+	app =  random.choice(ad.readlines()).strip('\n')
 	print picture(app+"%20"+name)
 	print app + " " + name
 
