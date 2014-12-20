@@ -43,7 +43,7 @@ def picture(name):
 
 def get_jpg(searchTerm):
 	fetcher = urllib2.build_opener()
-	searchUrl = "http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=animals%20" + searchTerm + "&start=0&rsz=1&imgsz=medium&imgc=gray&=imgtype=clipart"
+	searchUrl = "http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=animals%20" + searchTerm + "&start=0&rsz=1&imgsz=medium&imgc=gray&imgtype=lineart"
 	f = fetcher.open(searchUrl)
 	imageUrl = simplejson.load(f)['responseData']['results'][0]['url']
 	print "url: " + imageUrl
