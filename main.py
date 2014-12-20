@@ -13,15 +13,15 @@ def main():
         ad = open("ad.txt",'r')
         name =  random.choice(animalicos.readlines()).strip('\n')
 	app =  random.choice(ad.readlines()).strip('\n')
-	print picture(app+"%20"+name)
-	print app + " " + name
+	print picture(name)
+	print app + " " +name
 
 def picture(name):
 	greyscale = [
             " ",
-            " ",
-            ".,-",
-            "_ivc=!/|\\~",
+            ".,",
+            ":'^",
+            "ivc=!/|\\~",
             "gjez2]/(YL)t[+T7Vf",
             "mdK4ZGbNDXY5P*Q",
             "W8KMA",
